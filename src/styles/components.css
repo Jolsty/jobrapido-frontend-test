@@ -1,0 +1,64 @@
+@tailwind components;
+
+@layer components {
+  /* This won't be included in your compiled CSS unless you actually use it */
+
+  .my-name {
+    -webkit-animation: hide 0.5s step-end, typing 3.5s steps(40, end) 0.5s,
+      blink-caret 0.75s step-end 1.25s infinite;
+    animation: hide 0.55s ease-in, typing 3.5s steps(40, end) 0.5s,
+      blink-caret 0.75s step-end 1.25s infinite;
+  }
+
+  @-webkit-keyframes hide {
+    from,
+    to {
+      width: 0;
+    }
+  }
+
+  @keyframes hide {
+    from,
+    to {
+      width: 0;
+    }
+  }
+
+  @-webkit-keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @-webkit-keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #72296d;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #72296d;
+    }
+  }
+}
