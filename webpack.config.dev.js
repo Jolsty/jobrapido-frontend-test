@@ -19,6 +19,9 @@ module.exports = {
     }
   },
   target: 'web',
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     rules: [
       {
@@ -37,7 +40,8 @@ module.exports = {
               publicPath: '../'
             }
           },
-          'css-loader'
+          'css-loader',
+          'postcss-loader'
         ]
       }
     ]
@@ -45,7 +49,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css'
+      filename: '[name].css'
     }),
     new HtmlWebpackPlugin({
       template: './template.html'

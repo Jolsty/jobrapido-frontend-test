@@ -16,12 +16,11 @@ module.exports = {
 
   mode: 'production',
   target: 'web',
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     rules: [
-      {
-        test: /\.(png|jpg|jpeg|svg)$/,
-        type: 'asset'
-      },
       {
         test: /\.(js|jsx)$/,
         exclude: /nodeModules/,
@@ -38,7 +37,8 @@ module.exports = {
               publicPath: '../'
             }
           },
-          'css-loader'
+          'css-loader',
+          'postcss-loader'
         ]
       }
     ]
