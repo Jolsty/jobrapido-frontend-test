@@ -2,4 +2,13 @@
 
 @layer components {
   /* This won't be included in your compiled CSS unless you actually use it */
+  .list-item {
+    + .list-item {
+      margin-top: 1rem;
+    }
+  }
+
+  .ellipsis {
+    @apply whitespace-nowrap overflow-x-clip text-ellipsis;
+  }
 }
