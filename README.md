@@ -8,7 +8,8 @@ First, clone this repository:
 git clone git@github.com:Jolsty/jobrapido-frontend-test.git
 ```
 
-Then, assuming that you have Node (`v16.14.2` or higher) and NPM (`v8.5.0` or higher) on your machine, install all the packages (assuming that you have the latest NodeJS and NPM versions installed):
+Then, assuming that you have Node (`v16.14.2` or higher) and NPM (`v8.5.0` or higher) on your machine, install the packages: 
+:
 
 ```bash
 npm i
