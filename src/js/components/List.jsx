@@ -5,9 +5,7 @@ import { CgSpinner } from 'react-icons/cg'
 import CustomPagination from './CustomPagination'
 import ListItem from './ListItem'
 
-const List = ({ data, loading }) => {
-  const [currentPage, setCurrentPage] = useState(1)
-
+const List = ({ data, loading, currentPage, setCurrentPage }) => {
   const { pagedData, total, pageCount } = data
 
   if (!loading && total === 0) {

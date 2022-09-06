@@ -12,6 +12,7 @@ const App = () => {
     total: 0
   })
   const [loading, setLoading] = useState(false)
+  const [currentPage, setCurrentPage] = useState(1)
 
   useEffect(() => {
     // Initial data fetch
@@ -26,6 +27,11 @@ const App = () => {
       setLoading(false)
     })()
   }, [])
+
+  useEffect(() => {
+    // if the data changes, go back to the first page
+    setCurrentPage(1)
+  }, [data])
 
   const handleSearch = async (q) => {
     if (loading) {
@@ -57,7 +63,12 @@ const App = () => {
     <div className="flex flex-col items-center justify-start min-h-[100vh] w-full">
       <div className="w-full max-w-[1280px] flex flex-col justify-start items-center pt-24 h-100">
         <SearchInput onSearch={handleSearch} clearSearch={clearSearch} />
-        <List data={data} loading={loading} />
+        <List
+          data={data}
+          loading={loading}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
       </div>
     </div>
   )
