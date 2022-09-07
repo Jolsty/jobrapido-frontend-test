@@ -7,10 +7,10 @@ This is a simple client-side (React + tailwindCSS) application that has a search
 First, clone this repository:
 
 ```bash
-git clone git@github.com:Jolsty/jobrapido-frontend-test.git
+git clone git@github.com:Jolsty/typicode-api-example.git
 ```
 
-Then, assuming that you have Node (`v16.14.2` or higher) and NPM (`v8.5.0` or higher) on your machine, install the packages: 
+Then, assuming that you have Node (`v16.14.2` or higher) and NPM (`v8.5.0` or higher) on your machine, install the packages:
 
 ```bash
 npm i
