@@ -1,4 +1,6 @@
-# jobrapido-frontend-test
+# Frontend assignment
+
+This is a simple client-side (React + tailwindCSS) application that has a searchbox you can use in order to filter comments from typicode's API. It also includes a typeahead feature and pagination for the results.
 
 ## Getting Started
 
